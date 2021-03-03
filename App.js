@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Container, Content, Header, Footer, FooterTab, Button, Text, Title, Body} from 'native-base';
+import {Container, Content, Header, Footer, FooterTab, Button, Text, Title, Body, Left, Right} from 'native-base';
 import Counter from './components/counter.component.js';
 
 
@@ -8,9 +8,13 @@ export default function App() {
   return (
     <Container>
       <Header>
+        <Left>
+          
+        </Left>
         <Body>
             <Title>Counter App</Title>
         </Body>
+        <Right/>
       </Header>
       <Content>
         <Counter/>

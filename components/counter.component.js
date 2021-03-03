@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Content, Text, Button, Input} from 'native-base';
+import {Container, Content, Text, Button, Input, Center} from 'native-base';
 
 
 export default function Counter(){
