@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Content, Text, Button, Input, Center} from 'native-base';
+import {Container, Content, Text, Button, Input, Left, Right} from 'native-base';
 
 
 export default function Counter(){
@@ -22,10 +22,14 @@ export default function Counter(){
     }
     return (
         <Container>
-            <Content padder>               
-                <Text>{count}</Text>
-                <Button onPress={onPressDec}><Text>Dec (-)</Text></Button>
-                <Button onPress={onPressInc}><Text>Inc (+)</Text></Button>
+            <Content padder>
+                <Right>
+                    <Text>{count}</Text>
+                </Right>        
+                <Left><Button rounded onPress={onPressDec}><Text>Dec (-)</Text></Button></Left>
+                <Right><Button rounded onPress={onPressInc}><Text>Inc (+)</Text></Button></Right>
+                
+                
                 <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
                 <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
                 <Button block warning onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>
