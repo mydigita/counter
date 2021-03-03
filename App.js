@@ -8,11 +8,11 @@ export default function App() {
   return (
     <Container>
       <Header>
-        <Right>
+        <Left/>
         <Body>
             <Title>Counter App</Title>
         </Body>
-        </Right>
+        <Right/>
       </Header>
       <Content>
         <Counter/>
