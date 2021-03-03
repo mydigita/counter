@@ -1,17 +1,24 @@
 import React, {useState} from 'react';
-import {Container, Content, Text, Button} from 'native-base';
+import {Container, Content, Text, Button, Input} from 'native-base';
 
 
 export default function Counter(){
     const [count, setCount] = useState(0);
+    const [countVar, setCountVar] = useState(1);
     function onPressInc(){
-        setCount(count+1);
+        setCount(count + countVar);
     }
     function onPressDec(){
-        setCount(count-1);
+        setCount(count - countVar);
     }
-    function onPressReset(){
-        setCount(0);
+    function onPressResetCount(){
+        setCount(0);       
+    }
+    function onPressResetCountVar(){
+        setCountVar(1);
+    }
+    function onChangeCountVar(e){
+        setCountVar(Number(e.target.value))
     }
     return (
         <Container>
@@ -20,7 +27,9 @@ export default function Counter(){
                 <Text>{count}</Text>
                 <Button onPress={onPressDec}><Text>Dec (-)</Text></Button>
                 <Button onPress={onPressInc}><Text>Inc (+)</Text></Button>
-                <Button onPress={onPressReset}><Text>Reset</Text></Button>
+                <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
+                <Button onPress={onPressResetCount}><Text>Reset Result</Text></Button>
+                <Button onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>
             </Content>
         </Container>
     );
