@@ -22,11 +22,10 @@ export default function Counter(){
     }
     return (
         <Container>
-            <Content padder>
-                <Text>Simple Counter</Text>
+            <Content padder>               
                 <Text>{count}</Text>
-                <Button block onPress={onPressDec}><Text>Dec (-)</Text></Button>
-                <Button block onPress={onPressInc}><Text>Inc (+)</Text></Button>
+                <Button onPress={onPressDec}><Text>Dec (-)</Text></Button>
+                <Button onPress={onPressInc}><Text>Inc (+)</Text></Button>
                 <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
                 <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
                 <Button block warning onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>
