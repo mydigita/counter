@@ -22,7 +22,7 @@ export default function Counter(){
     }
     return (
         <Container>
-            <Content>
+            <Content padder>
                 <Text>Simple Counter</Text>
                 <Text>{count}</Text>
                 <Button onPress={onPressDec}><Text>Dec (-)</Text></Button>

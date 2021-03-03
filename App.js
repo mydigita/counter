@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Container, Content, Header, Footer, Text} from 'native-base';
+import {Container, Content, Header, Footer, FooterTab, Button, Text} from 'native-base';
 import Counter from './components/counter.component.js';
 
 
@@ -9,9 +9,16 @@ export default function App() {
     <Container>
       <Header/>
       <Content>
-      <Counter/>
+        <Counter/>
       </Content>
-      <Footer/>
+      
+      <Footer>
+          <FooterTab>
+            <Button full>
+              <Text>dev: tradecoder</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
     </Container>
   );
 }
