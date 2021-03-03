@@ -36,4 +36,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  inlineButton:{
+    flex:1,
+    flexDirection:'row',
+  }
 });
