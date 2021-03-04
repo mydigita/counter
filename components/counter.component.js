@@ -46,7 +46,7 @@ export default function Counter(){
          
                 <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
                 <Form>
-                    <Item floatingLabel>
+                    <Item stackedLabel>
                         <Label>Increase / decrease by</Label>
                         <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
                     </Item>
