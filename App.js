@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
-import {Container, Header, Title, Body, Footer, FooterTab, Content, Text, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
+import React, {useState, useEffect} from 'react';
+import {Text} from 'react-native';
+import {Container, Header, Title, Body, Footer, FooterTab, Content, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
+import * as Font from 'expo-font';
 
 
 export default function App(){
@@ -20,12 +22,14 @@ export default function App(){
     function onChangeCountVar(e){
         setCountVar(Number(e.target.value))
     }
+
+    
     return (
         <Container>
 
           <Header style= {{backgroundColor:'#008080'}}>      
             <Body >
-              <Title style= {{ alignSelf: 'center'}}>Counter App</Title>
+              <Text style= {{ alignSelf: 'center'}}>Counter App</Text>
             </Body>
           </Header>
             <Content padder>
