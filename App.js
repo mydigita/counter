@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Header, Title, Icon, Left, Right, Body, Footer, FooterTab, Content, Text, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
+import {Container, Header, Title, Body, Footer, FooterTab, Content, Text, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
 
 
 export default function App(){
@@ -23,16 +23,16 @@ export default function App(){
     return (
         <Container>
 
-          <Header style={{backgroundColor:'#008080'}}>      
+          <Header style= {{backgroundColor:'#008080'}}>      
             <Body >
-              <Title style={{ alignSelf: 'center'}}>Counter App</Title>
+              <Title style= {{ alignSelf: 'center'}}>Counter App</Title>
             </Body>
           </Header>
             <Content padder>
-                <Body style={{paddingBottom:'80px', paddingTop:'20px'}}>
-                <H1 style={{fontSize:'40px'}}>{count}</H1>
+                <Body>
+                <H1>{count}</H1>
                 </Body>
-                <Grid style={{paddingBottom:'20px'}}>
+                <Grid>
                     <Row>
                         <Col>
                         <Body>
@@ -49,10 +49,10 @@ export default function App(){
           
                   <Button block danger onPress={onPressResetCount}><Text uppercase={false}>Reset Result</Text></Button>
           
-                <Form style={{paddingTop:'20px', paddingLeft:'0'}}>
+                <Form>
                     <Item stackedLabel>
                         <Label>Increase / decrease by</Label>
-                        <Input keyboardType="numeric" value={countVar} maxLength={12} onChange={onChangeCountVar}/>                       
+                        <Input keyboardType="numeric" placeholder='1' maxLength={12} onChange={onChangeCountVar}/>                       
                     </Item>
                 </Form>
                 <Button block danger onPress={onPressResetCountVar}><Text uppercase={false}>Reset Variation</Text></Button>           
@@ -61,7 +61,7 @@ export default function App(){
             <Footer style={{backgroundColor:'#00182d'}}>
               <FooterTab>
                 <Body>
-                <Text style={{color:'silver'}}>By: TradeCoder</Text>
+                <Text style={{color:'silver'}}>By: Mamun @ TradeCoder</Text>
                 </Body>
               </FooterTab>
             </Footer>
