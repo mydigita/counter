@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Text} from 'react-native';
-import {Container, Header, Title, Body, Footer, FooterTab, Content, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
-import * as Font from 'expo-font';
+import {Container, Header, Body, Footer, FooterTab, Content, Button, Form, Item, Input, Label,  Grid, Row, Col, H1} from 'native-base';
+
 
 
 export default function App(){
