@@ -36,18 +36,18 @@ export default function App(){
                     <Row>
                         <Col>
                         <Body>
-                            <Button onPress={onPressDec}><Text>Dec (-)</Text></Button>
+                            <Button bordered rounded  large onPress={onPressDec}><Text uppercase={false}>Dec. ( - )</Text></Button>
                         </Body>
                         </Col>
                         <Col>
                         <Body>
-                            <Button onPress={onPressInc}><Text>Inc (+)</Text></Button>
+                            <Button bordered rounded  large onPress={onPressInc}><Text uppercase={false}>Inc. ( + )</Text></Button>
                         </Body>
                         </Col>
                     </Row>
                 </Grid>
           
-                  <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
+                  <Button block danger onPress={onPressResetCount}><Text uppercase={false}>Reset Result</Text></Button>
           
                 <Form style={{paddingTop:'20px', paddingLeft:'0'}}>
                     <Item stackedLabel>
@@ -55,13 +55,13 @@ export default function App(){
                         <Input keyboardType="numeric" value={countVar} maxLength={12} onChange={onChangeCountVar}/>                       
                     </Item>
                 </Form>
-                <Button block primary onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>           
+                <Button block danger onPress={onPressResetCountVar}><Text uppercase={false}>Reset Variation</Text></Button>           
             </Content>
 
-            <Footer style={{backgroundColor:'#008080'}}>
+            <Footer style={{backgroundColor:'#00182d'}}>
               <FooterTab>
                 <Body>
-                <Text>Dev: TradeCoder</Text>
+                <Text style={{color:'silver'}}>By: TradeCoder</Text>
                 </Body>
               </FooterTab>
             </Footer>
