@@ -41,15 +41,16 @@ export default function Counter(){
                         </Col>
                     </Row>
                 </Grid>
-                <Form>
-                    <Item floatingLabel>
-                        <Label>Increase/decrease by</Label>
-                        <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
-                    </Item>
-                </Form>
+                
        
          
                 <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
+                <Form>
+                    <Item floatingLabel>
+                        <Label>Increase / decrease by</Label>
+                        <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
+                    </Item>
+                </Form>
                 <Button block warning onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>
         
            
