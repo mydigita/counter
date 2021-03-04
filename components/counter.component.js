@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {StyleSheet} from 'react-native';
-import {Container, Content, Text, Button, Input, Left, Right, Grid} from 'native-base';
+import {Container, Content, Text, Button, Input, Left, Right, Grid, Row, Col} from 'native-base';
 
 
 export default function Counter(){
