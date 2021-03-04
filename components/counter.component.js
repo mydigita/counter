@@ -26,8 +26,14 @@ export default function Counter(){
             <Content padder>           
                 <Text>{count}</Text>
                 <Grid>
-                    <Button rounded onPress={onPressDec}><Text>Dec (-)</Text></Button>
-                    <Button rounded onPress={onPressInc}><Text>Inc (+)</Text></Button>
+                    <Row>
+                        <Col>
+                            <Button rounded onPress={onPressDec}><Text>Dec (-)</Text></Button>
+                        </Col>
+                        <Col>
+                            <Button rounded onPress={onPressInc}><Text>Inc (+)</Text></Button>
+                        </Col>
+                    </Row>
                 </Grid>
                 <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
                 <Button block danger onPress={onPressResetCount}><Text>Reset Result</Text></Button>
