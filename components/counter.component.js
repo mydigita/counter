@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {StyleSheet} from 'react-native';
-import {Container, Content, Text, Button, Form, Item, Input, Label, Left, Right, Body, Grid, Row, Col, H1} from 'native-base';
+import {Container, Content, Text, Button, Form, Item, Input, Label, Icon, Left, Right, Body, Grid, Row, Col, H1} from 'native-base';
 
 
 export default function Counter(){
@@ -49,6 +49,7 @@ export default function Counter(){
                     <Item stackedLabel>
                         <Label>Increase / decrease by</Label>
                         <Input keyboardType="numeric" value={countVar} onChange={onChangeCountVar}/>
+                       
                     </Item>
                 </Form>
                 <Button block warning onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>
