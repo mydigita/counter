@@ -23,7 +23,7 @@ export default function App(){
     return (
         <Container>
 
-          <Header>      
+          <Header style={{backgroundColor:'#008080'}}>      
             <Body >
               <Title style={{ alignSelf: 'center'}}>Counter App</Title>
             </Body>
@@ -55,10 +55,10 @@ export default function App(){
                         <Input keyboardType="numeric" value={countVar} maxLength={12} onChange={onChangeCountVar}/>                       
                     </Item>
                 </Form>
-                <Button block warning onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>           
+                <Button block primary onPress={onPressResetCountVar}><Text>Reset Variation</Text></Button>           
             </Content>
 
-            <Footer>
+            <Footer style={{backgroundColor:'#008080'}}>
               <FooterTab>
                 <Body>
                 <Text>Dev: TradeCoder</Text>
