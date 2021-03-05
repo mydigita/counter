@@ -45,7 +45,7 @@ export default function App(){
                     </Col>                            
                 </Row>
                 <Row>
-                    <Button title="Reset Count" onPress={onPressResetCount}/>  
+                    <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>  
                 </Row>
             </Grid>
         </SafeAreaProvider>
