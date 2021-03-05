@@ -36,13 +36,16 @@ export default function App(){
                 <Row style={{flex:1, justifyContent:'center', alignItems:'center'}}>
                     <Text h1>{count}</Text>
                 </Row>
-                <Row>
+                <Row>                    
                     <Col>
                         <Button title="Dec (-)" onPress={onPressDec}/>
                     </Col>
                     <Col>
                         <Button title="Inc (+)" onPress={onPressInc}/>
-                    </Col>
+                    </Col>                            
+                </Row>
+                <Row>
+                    <Button title="Reset Count" onPress={onPressResetCount}/>  
                 </Row>
             </Grid>
         </SafeAreaProvider>
