@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { ThemeProvider, Header, Text, Button, Input } from 'react-native-elements';
 import { Col, Row, Grid } from "react-native-easy-grid";
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 
 
@@ -9,10 +8,10 @@ export default function App(){
     const [count, setCount] = useState(0);
     const [countVar, setCountVar] = useState(1);
     function onPressInc(){
-        setCount(count + countVar);
+        setCount(count+countVar);
     }
     function onPressDec(){
-        setCount(count - countVar);
+        setCount(count-countVar);
     }
     function onPressResetCount(){
         setCount(0);       
@@ -21,17 +20,21 @@ export default function App(){
         setCountVar(1);
     }
     function onChangeCountVar(e){
-        setCountVar(Number(e.target.value))
+        if(e===""){
+            setCountVar(1)
+        } else{
+        setCountVar(parseInt(e))
     }
-
+    }
     
     return (
    
             <ThemeProvider theme={theme}>
             <Header
-                leftComponent={{ icon: 'menu', color: '#fff' }}
-                centerComponent={{ text: 'Counter App', style: { color: '#fff' } }}
-                rightComponent={{ icon: 'home', color: '#fff' }}
+               
+                centerComponent={{ text: 'Counter App', style: { color: 'white', fontSize:30 } }}
+                rightComponent={{text:'1.0', style:{color:'white', fontSize:20}}}
+               
             />
             <Grid>
                 <Row style={{flex:1, justifyContent:'center', alignItems:'center'}}>
@@ -41,12 +44,21 @@ export default function App(){
                     <Col>
                         <Button type='solid' title="Dec (-)" onPress={onPressDec}/>
                     </Col>
+                    <Col></Col>
                     <Col>
                         <Button type='solid' title="Inc (+)" onPress={onPressInc} />
                     </Col>                            
                 </Row>
                 <Row>
-                    <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>  
+                    <Col>
+                       <Input keyboardType="numeric" onChangeText={onChangeCountVar}/>
+                    </Col>
+                    <Col>
+                       <Button type='outline' title="Reset Variation" onPress={onPressResetCountVar}/>                     
+                    </Col>
+                    <Col>
+                        <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>
+                    </Col>
                 </Row>
             </Grid>
             </ThemeProvider>
@@ -60,6 +72,6 @@ const theme = {
       color: 'auto',
       titleStyle:{          
           fontSize:30,
-      },      
+      },  
     },
   };
