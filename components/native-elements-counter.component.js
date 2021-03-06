@@ -26,8 +26,7 @@ export default function App(){
 
     
     return (
-   
-            <ThemeProvider theme={theme}>
+        <SafeAreaProvider>
             <Header
                 leftComponent={{ icon: 'menu', color: '#fff' }}
                 centerComponent={{ text: 'Counter App', style: { color: '#fff' } }}
@@ -39,27 +38,16 @@ export default function App(){
                 </Row>
                 <Row>                    
                     <Col>
-                        <Button type='solid' title="Dec (-)" onPress={onPressDec}/>
+                        <Button title="Dec (-)" onPress={onPressDec}/>
                     </Col>
                     <Col>
-                        <Button type='solid' title="Inc (+)" onPress={onPressInc} />
+                        <Button title="Inc (+)" onPress={onPressInc}/>
                     </Col>                            
                 </Row>
                 <Row>
                     <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>  
                 </Row>
             </Grid>
-            </ThemeProvider>
-
+        </SafeAreaProvider>
     );
 }
-
-const theme = {
-    Button: {
-      raised: true,
-      color: 'auto',
-      titleStyle:{          
-          fontSize:30,
-      },      
-    },
-  };
