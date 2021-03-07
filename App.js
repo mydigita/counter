@@ -31,11 +31,9 @@ export default function App(){
     return (
    
             <ThemeProvider theme={theme}>
-            <Header
-               
-                centerComponent={{ text: 'Counter App', style: { color: 'white', fontSize:30 } }}
-                rightComponent={{text:'1.0', style:{color:'white', fontSize:20}}}
-               
+            <Header                
+                centerComponent={{ text: 'Sunni Counter', style: { color: 'white', fontSize:30 } }}
+                rightComponent={{text:'1.0', style:{color:'white', fontSize:20}}}               
             />
             <Grid>
                 <Row style={{flex:1, justifyContent:'center', alignItems:'center'}}>
