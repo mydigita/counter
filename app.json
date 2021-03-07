@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "counter",
-    "slug": "counter",
+    "name": "sunni-counter",
+    "slug": "sunnicounter",
     "version": "1.0.0",
     "author":"Mamun @ TradeCoder",
     "orientation": "portrait",
@@ -21,7 +21,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.tradecoder.counter",
+      "package": "com.tradecoder.sunnicounter",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
