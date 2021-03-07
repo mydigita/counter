@@ -58,7 +58,7 @@ export default function App(){
                     <Col>
                     <Text>Inc/Dec. by</Text>
                     
-                       <Input style={{fontSize:30, color:'red'}} keyboardType="numeric" onChangeText={onChangeCountVar}/>
+                       <Input autoCorrect={false} style={{fontSize:30, color:'red'}} keyboardType="numeric" onChangeText={onChangeCountVar}/>
                     </Col>
                     <Col>
                        <Button type='outline' title="Reset" onPress={onPressResetCountVar}/>                     
