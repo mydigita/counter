@@ -3,6 +3,7 @@
     "name": "counter",
     "slug": "counter",
     "version": "1.0.0",
+    "author":"Mamun @ TradeCoder",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,6 +21,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.tradecoder.counter",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

@@ -19,6 +19,7 @@ export default function App(){
     function onPressResetCountVar(){
         setCountVar(1);
     }
+    
     function onChangeCountVar(e){
         if(e===""){
             setCountVar(1)
@@ -56,8 +57,7 @@ export default function App(){
                 </Row>
                 <Row style={{padding:10}}>
                     <Col>
-                    <Text>Inc/Dec. by</Text>
-                    
+                    <Text>Inc/Dec. by</Text>                    
                        <Input defaultValue={countVar.toString()} autoCorrect={false} style={{fontSize:30, color:'red'}} keyboardType="numeric" onChangeText={onChangeCountVar}/>
                     </Col>
                     <Col>
