@@ -60,6 +60,9 @@ export default function App(){
                         <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>
                     </Col>
                 </Row>
+                <Row style={{backgroundColor:'blue'}}>
+
+                </Row>
             </Grid>
             </ThemeProvider>
 
@@ -72,6 +75,9 @@ const theme = {
       color: 'auto',
       titleStyle:{          
           fontSize:30,
-      },  
+      },
+      Input:{
+          color:'red',
+      }
     },
   };
