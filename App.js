@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { ThemeProvider, Header, Text, Button, Input } from 'react-native-elements';
 import { Col, Row, Grid } from "react-native-easy-grid";
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 
 
@@ -29,6 +30,7 @@ export default function App(){
     }
     
     return (
+        <SafeAreaProvider>
    
             <ThemeProvider theme={theme}>
             <Header                
@@ -68,6 +70,7 @@ export default function App(){
                 </Row>
             </Grid>
             </ThemeProvider>
+            </SafeAreaProvider>
 
     );
 }
