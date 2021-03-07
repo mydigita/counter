@@ -1,5 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "name":"counter",
+  "version":"1.0.0",
+  "author":"Mamun  @ TradeCoder",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
