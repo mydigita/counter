@@ -51,7 +51,7 @@ export default function App(){
                 </Row>
                 <Row>
                     <Col>
-                       <Input keyboardType="numeric" onChangeText={onChangeCountVar}/>
+                       <Input style={{fontSize:30, padding:10, color:'red'}} keyboardType="numeric" onChangeText={onChangeCountVar}/>
                     </Col>
                     <Col>
                        <Button type='outline' title="Reset Variation" onPress={onPressResetCountVar}/>                     
