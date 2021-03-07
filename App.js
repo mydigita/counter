@@ -40,7 +40,7 @@ export default function App(){
                 <Row style={{flex:1, justifyContent:'center', alignItems:'center'}}>
                     <Text h1>{count}</Text>
                 </Row>
-                <Row>        
+                <Row style={{padding:10}}>   
                     <Col>
                         <Button type='solid' title="Dec (-)" onPress={onPressDec}/>
                     </Col>
@@ -49,12 +49,12 @@ export default function App(){
                         <Button type='solid' title="Inc (+)" onPress={onPressInc} />
                     </Col>                            
                 </Row>
-                <Row>                    
+                <Row style={{padding:10}}>                    
                     <Col>
                         <Button type='outline' title="Reset Count" onPress={onPressResetCount}/>
                     </Col>
                 </Row>
-                <Row>
+                <Row style={{padding:10}}>
                     <Col>
                     <Text>Inc/Dec. by</Text>
                     
