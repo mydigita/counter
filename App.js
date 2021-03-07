@@ -65,8 +65,8 @@ export default function App(){
                     </Col>                    
                 </Row>
                 
-                <Row style={{backgroundColor:'#2171EE', height:60}}>
-
+                <Row style={{justifyContent:'center', alignItems:'center', backgroundColor:'#2171EE', height:60}}>
+                    <Text style={{color:'white', fontSize:20}}>Dev: Mamun @ TRADECODER</Text>
                 </Row>
             </Grid>
             </ThemeProvider>
