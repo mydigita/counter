@@ -65,7 +65,7 @@ export default function App(){
                     </Col>                    
                 </Row>
                 
-                <Row style={{backgroundColor:'blue', height:60}}>
+                <Row style={{backgroundColor:'#2171EE', height:60}}>
 
                 </Row>
             </Grid>
