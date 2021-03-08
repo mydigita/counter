@@ -4,7 +4,6 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 
-
 export default function App(){
     const [count, setCount] = useState(0);
     const [countVar, setCountVar] = useState(1);
@@ -34,7 +33,7 @@ export default function App(){
    
             <ThemeProvider theme={theme}>
             <Header                
-                centerComponent={{ text: 'Sunni Counter', style: { color: 'white', fontSize:30 } }}
+                centerComponent={{ text: 'Sunni Counter App', style: { color: 'white', fontSize:30 } }}
                 rightComponent={{text:'1.0', style:{color:'white', fontSize:20}}}               
             />
             <Grid>
