@@ -33,19 +33,19 @@ export default function App(){
    
             <ThemeProvider theme={theme}>
             <Header                
-                centerComponent={{ text: 'Sunni Counter App', style: { color: 'white', fontSize:30 } }}
-                rightComponent={{text:'1.0', style:{color:'white', fontSize:20}}}               
+                centerComponent={{ text: 'Sunni Counter App', style: { color: 'white', fontSize:20 } }}
+                rightComponent={{text:'1.0', style:{color:'white', fontSize:18}}}               
             />
             <Grid>
                 <Row style={{flex:1, justifyContent:'center', alignItems:'center'}}>
                     <Text h1>{count}</Text>
                 </Row>
                 <Row style={{padding:10}}>   
-                    <Col>
+                    <Col style={{marginRight:30}}>
                         <Button type='solid' title="Dec (-)" onPress={onPressDec}/>
                     </Col>
-                    <Col></Col>
-                    <Col>
+                
+                    <Col style={{marginLeft:30}}>
                         <Button type='solid' title="Inc (+)" onPress={onPressInc} />
                     </Col>                            
                 </Row>
@@ -57,7 +57,7 @@ export default function App(){
                 <Row style={{padding:10}}>
                     <Col>
                     <Text>Inc/Dec. by</Text>                    
-                       <Input defaultValue={countVar.toString()} autoCorrect={false} style={{fontSize:30, color:'red'}} keyboardType="numeric" onChangeText={onChangeCountVar}/>
+                       <Input defaultValue={countVar.toString()} autoCorrect={false} style={{fontSize:30, color:'red' }} keyboardType="numeric" onChangeText={onChangeCountVar}/>
                     </Col>
                     <Col>
                        <Button type='outline' title="Reset" onPress={onPressResetCountVar}/>                     
