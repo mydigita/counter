@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "sunni-counter",
-    "slug": "sunnicounter",
+    "name": "Counter App",
+    "slug": "counter",
     "version": "1.0.0",    
     "orientation": "portrait",
     "icon": "./assets/icon.png",
