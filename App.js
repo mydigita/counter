@@ -33,7 +33,7 @@ export default function App(){
    
             <ThemeProvider theme={theme}>
             <Header                
-                centerComponent={{ text: 'Sunni Counter App', style: { color: 'white', fontSize:20 } }}
+                centerComponent={{ text: 'Counter App', style: { color: 'white', fontSize:20 } }}
                 rightComponent={{text:'1.0', style:{color:'white', fontSize:18}}}               
             />
             <Grid>
@@ -65,7 +65,7 @@ export default function App(){
                 </Row>
                 
                 <Row style={{justifyContent:'center', alignItems:'center', backgroundColor:'#2171EE', height:60}}>
-                    <Text style={{color:'white', fontSize:20}}>TradeCoder</Text>
+                    <Text style={{color:'white', fontSize:20}}>by: Mamun | TradeCoder</Text>
                 </Row>
             </Grid>
             </ThemeProvider>
