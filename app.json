@@ -2,7 +2,7 @@
   "expo": {
     "name": "Easy Counter App",
     "slug": "counter",
-    "version": "1.0.1",    
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -21,7 +21,7 @@
     },
     "android": {
       "package": "com.tradecoder.counter",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
