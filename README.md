@@ -3,4 +3,4 @@
 
 Published at google play store.
 
-Status: In Review
+Status: Active, and In Review.
